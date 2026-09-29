@@ -1,19 +1,13 @@
 import pandas as pd
 
-# Student data
-data = {
-    "Name": ["Anu", "Bala", "Divya", "Karthik", "Meena"],
-    "Marks": [85, 72, 91, 65, 78],
-    "Attendance": [95, 82, 98, 70, 88]
-}
+# Load the student data
+df = pd.read_csv("student_data.csv")
 
-# Create DataFrame
-df = pd.DataFrame(data)
+print("STUDENT PERFORMANCE ANALYSIS")
+print("-----------------------------")
 
-print("Student Performance Analysis")
-print("----------------------------")
-
-# Display student data
+# Display the data
+print("\nStudent Data:")
 print(df)
 
 # Calculate average marks
